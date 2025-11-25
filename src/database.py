@@ -1,9 +1,9 @@
 
-from sqlalchemy.orm import sessionmaker , DeclarativeBase
+from sqlalchemy.orm import DeclarativeBase
 from config import host, password, user, port
 from basse_tz import new_base
-from sqlalchemy.ext.asyncio import create_async_engine
-from sqlalchemy.ext.asyncio import AsyncSession
+from sqlalchemy.ext.asyncio import create_async_engine, async_sessionmaker
+
 
 
 # асинхронный
@@ -18,7 +18,7 @@ class Base(DeclarativeBase):
     pass
 
 
-async_session = sessionmaker(async_engine, class_= AsyncSession, expire_on_commit=False)
+async_session = async_sessionmaker(bind=async_engine, expire_on_commit=False)
 
 
 
