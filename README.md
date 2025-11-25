@@ -35,7 +35,7 @@
 
 1. **Клонирование репозитория**:
    ```bash
-        git@github.com:askerovasif19933-stack/py.git    
+        git@github.com:askerovasif19933-stack/asinc_alchemy.git    
    cd test_task
    ```
 
