@@ -13,6 +13,7 @@ async_engine = create_async_engine(
     echo=False,  # для дебага SQL запросов
     pool_pre_ping=True  # проверка соединения
 )
+
 class Base(DeclarativeBase):
     pass
 
