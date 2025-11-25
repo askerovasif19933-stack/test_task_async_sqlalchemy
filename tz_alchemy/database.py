@@ -1,4 +1,4 @@
-from click import echo
+
 from sqlalchemy.orm import sessionmaker , DeclarativeBase
 from config import host, password, user
 from basse_tz import new_base
